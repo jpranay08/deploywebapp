@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+    <h1> Latest articles are</h1>
+    
+    {% for latest_article in latest_articles %}
+         <p>{{latest_article.id}} {{latest_article.articlename}}</p>
+         {% endfor %}
+    
+</body>
+</html>
